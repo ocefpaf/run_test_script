@@ -1,0 +1,19 @@
+[project]
+authors = ["Filipe Fernandes <ocefpaf@gmail.com>"]
+channels = ["conda-forge"]
+description = "Run test script from Matt"
+name = "sagemaker-jupyter"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+test_main = "python test_io.py"
+
+[dependencies]
+intake = ">=2.0.7,<3"
+numpy = ">=2.1.2,<3"
+pandas = ">=2.2.3,<3"
+s3fs = ">=2024.9.0,<2025"
+jinja2 = ">=3.1.4,<4"
+zarr = ">=2.18.3,<3"
+intake-xarray = ">=0.7.0,<0.8"
